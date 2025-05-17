@@ -9,9 +9,9 @@ app = Flask("Projet2")
 app.secret_key = "l'électricien"
 
 mongo = pymongo.MongoClient("mongodb+srv://clemlaubgeek360:magicmaker@cluster0.7auv6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-BDD_utilisateur = mongo.BDD.utilisateurs
-mon_utilisateur = BDD_utilisateur.find_one({"pseudo":"clem"})
-print(mon_utilisateur)
+### BDD_utilisateur = mongo.BDD.utilisateurs
+### mon_utilisateur = BDD_utilisateur.find_one({"pseudo":"clem"})
+### print(mon_utilisateur)
 
 
 @app.route('/')
